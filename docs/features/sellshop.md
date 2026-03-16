@@ -12,19 +12,17 @@ Using an e-commerce extension has the added benefit of being able to purchase mu
 
 You can also use all payment methods supported by the selected e-commerce extension.
 
-You can check the supported extensions in the 3rd Party integration section.
+You can check the supported extensions in the [3rd Party integration](/docs/category/integrations) section.
 
 ## Setup Instructions
 
 1. First, ensure that the selected extension is working properly for normal products.
 2. Install the required Joomdle integration plugins for the extension you are using.  
-   You can find additional information about each one in **3rd_Party_Integration**.
+   You can find additional information about each one in the [3rd Party integrations](/docs/category/integrations).
 3. Once installed and enabled, configure Joomdle to use the selected e-commerce component:
    - Go to **Joomdle backend → Configuration → Shop**.
 
 After configuration, you can access the **Shop** section in the Joomdle admin panel to enable the courses you want to sell.
-
-![Shop Screenshot](File:Shop.png)
 
 ## Course Listing
 

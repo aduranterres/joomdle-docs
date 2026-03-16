@@ -1,5 +1,6 @@
 ---
 sidebar_position: 6
+description: Verify your Joomdle integration is working correctly
 ---
 
 # System Health Check

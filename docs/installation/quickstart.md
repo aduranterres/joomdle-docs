@@ -1,11 +1,12 @@
 ---
 sidebar_position: 1
+description: Get up and running right away
 ---
 # Quickstart
 
 ## Joomla
 
-1. Install the **Joomdle** Joomla package.
+1. Install the **Joomdle** Joomla package **`pkg_joomdle.zip`**.
 2. Go to **Components → Joomdle → Configuration**.
 3. Enter the **Moodle URL** and save the configuration.
 4. Copy the **Joomla auth token** that was generated.
@@ -13,8 +14,8 @@ sidebar_position: 1
 
 ## Moodle
 
-1. Install the **auth plugin** in Moodle.
-2. A new settings page will appear — enter the **Joomla URL** and the **Joomla auth token**, then save the configuration.
+1. Install the **Joomdle** auth plugin **`auth_joomdle.zip`** in Moodle.
+2. A new settings page will appear — enter the **Joomla URL** and the **Joomla auth token** you copied, then save the configuration.
 3. Go to **Site administration → Plugins → Authentication → Manage authentication** and enable the **Joomdle** plugin.
 4. Go to **Site administration → Server → Web services → Manage tokens** and copy the token for the **Joomdle service**.
 

@@ -1,5 +1,6 @@
 ---
 sidebar_position: 2
+description: What you need before installing Joomdle
 ---
 
 # Prerequisites

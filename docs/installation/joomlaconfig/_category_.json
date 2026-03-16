@@ -2,7 +2,8 @@
   "label": "Joomdle configuration - Joomla",
   "position": 3,
   "collapsed": true,
-  "link": {
+  "description": "Configure the Joomdle component settings on the Joomla side",
+"link": {
     "type": "generated-index",
     "description": "How to configure Joomdle in Joomla."
   }

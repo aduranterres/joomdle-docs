@@ -29,5 +29,3 @@ Modify the copied file to meet your needs. Your changes will take effect without
 ## Additional Resources
 
 For comprehensive override instructions, refer to the official [Joomla template overrides documentation](https://guide.joomla.org/user-manual/templates/templates-template-overrides).
-
-The Joomdle demo site includes examples where template overrides were implemented to achieve better template integration.

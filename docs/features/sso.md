@@ -36,9 +36,9 @@ This is controlled with the **"Use redirectless SSO"** option in Joomdle configu
 
 ## Important Notice
 
-When Joomdle uses login/logout with redirection, no more plugins will be executed afterward, as the redirection stops the normal Joomla process.
+When Joomdle uses login/logout with redirection, no more user plugins will be executed afterward, as the redirection stops the normal Joomla process.
 
-This is usually not important because the **Joomdlehooks user plugin** is set to execute after all other plugins. However, in some situations, it may cause issues.
+This is usually not important because the **Joomdle user plugin** is set to execute after all other plugins. However, in some situations, it may cause issues.
 
 If you notice something not working as expected, you can temporarily disable the **Joomdle user plugin** plugin to check if it is causing the problem.
 

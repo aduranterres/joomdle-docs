@@ -12,6 +12,7 @@ Defines where to open Moodle links. Available options:
 
 - **Wrapper** - Opens Moodle content inside a Joomla wrapper (iframe).
 - **New window** - Opens Moodle content in a new browser window/tab.
+- **Same window** - Opens Moodle content in the same browser window/tab.
 
 ## Wrapper Scroll Bars
 

@@ -32,7 +32,7 @@ const FeatureList: FeatureItem[] = [
     description: (
       <>
         Connect with popular Joomla extensions like HikaShop, AcyMailing, and
-        Events Booking to sell courses and manage learners at scale.
+        Events Booking to sell courses and manage your custom workflows.
       </>
     ),
   },

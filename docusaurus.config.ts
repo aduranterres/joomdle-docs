@@ -44,8 +44,7 @@ const config: Config = {
           sidebarPath: './sidebars.ts',
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/joomdle/joomdle/tree/main/docs/',
+          // editUrl: 'https://github.com/aduranterres/joomdle-docs/edit/main/',
         },
         blog: false,
         theme: {

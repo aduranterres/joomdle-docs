@@ -1,5 +1,6 @@
 ---
 sidebar_position: 8
+description: Fully remove Joomdle from your Joomla and Moodle installations
 ---
 
 # Removing Joomdle
@@ -33,4 +34,3 @@ After uninstalling, check for any remaining Joomdle-related items:
 
 - **Menu items** — Remove any Joomla menu items that linked to Joomdle views.
 - **Modules** — Check for any Joomdle modules still assigned to positions.
-- **Database tables** — Joomla's uninstaller removes Joomdle tables automatically, but you can verify by checking your database for any tables prefixed with `jos_joomdle` (or your table prefix equivalent).

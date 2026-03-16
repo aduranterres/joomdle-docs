@@ -1,5 +1,6 @@
 ---
 sidebar_position: 5
+description: Configure the Joomdle authentication plugin settings in Moodle
 ---
 
 # Joomdle configuration - Moodle
@@ -13,7 +14,7 @@ To access these settings, go to **Site administration > Plugins > Authentication
 ### Joomla URL
 `auth_joomdle | joomla_url`
 
-The full URL of your Joomla server (e.g., `http://localhost/j6`). This is the base URL that Moodle will use to communicate with Joomla through the Joomdle web services.
+The full URL of your Joomla server (e.g., `https://www.example.com`). This is the base URL that Moodle will use to communicate with Joomla through the Joomdle web services.
 
 ### Joomdle's Joomla authentication token
 `auth_joomdle | joomla_auth_token`
@@ -23,12 +24,12 @@ The authentication token configured in the Joomdle component on the Joomla side.
 ### Connection method
 `auth_joomdle | connection_method`
 
-The PHP method used to connect to the Joomla web services. Default is `file_get_contents`. Alternative methods may be available depending on your server configuration.
+The PHP method used to connect to the Joomla web services. Options are `file_get_contents` and `cURL`. Default is **file_get_contents**
 
 ### Web services protocol
 `auth_joomdle | ws_protocol`
 
-The protocol used for web services communication between Moodle and Joomla. Default is `REST`.
+The protocol used for web services communication between Moodle and Joomla. Only `REST` is supported.
 
 ## User Synchronization
 

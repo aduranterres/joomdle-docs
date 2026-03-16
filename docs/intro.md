@@ -8,7 +8,7 @@ Joomdle is a powerful integration bridge that connects **Joomla** and **Moodle**
 
 ## What is Joomdle?
 
-Joomdle seamlessly integrates two of the world's most popular open-source platforms:
+Joomdle is a series of Joomla and Moodle component/plugins/modules that help integrate two of the world's most popular open-source platforms:
 
 - **Joomla** — a versatile CMS used to build websites and online applications
 - **Moodle** — a leading Learning Management System (LMS) designed for online education
@@ -20,19 +20,29 @@ With Joomdle, your users can log in once and access both platforms transparently
 - **Single Sign-On (SSO)** — Users authenticate once and are seamlessly logged into both Joomla and Moodle
 - **Unified User Management** — Manage all users from Joomla; Joomdle keeps Moodle in sync automatically
 - **Course Integration** — Display Moodle courses, categories, and enrolment options directly within your Joomla site
-- **Consistent Design** — Learners stay on your Joomla site while accessing Moodle content, maintaining a consistent look and feel
+- **Consistent Design** — If desired, learners stay on your Joomla site while accessing Moodle content via a wrapper, maintaining a consistent look and feel
 - **Flexible Enrolment** — Support for free and paid course enrolments, with payment integration options
 
 ## How It Works
 
-Joomdle communicates with Moodle through its **web services API**. Once configured, Joomla becomes the front-end interface for your e-learning portal, while Moodle handles all course delivery, grading, and learning activities behind the scenes.
+Joomdle communicates with Moodle through its **web services API**. Once configured, Joomla becomes the front-end interface for your e-learning portal, while Moodle handles all course delivery, grading, and learning activities.
 
-The typical flow is:
+A typical flow is:
 
 1. A user registers or logs in on your Joomla site
 2. Joomdle automatically creates or synchronises the corresponding Moodle account
 3. The user can browse, enrol in, and access courses — all from within the Joomla interface
-4. Course content is delivered by Moodle, transparently embedded in your site
+4. Course content is delivered by Moodle, showing it in a wrapper or on its own window
+
+## Flexibility
+
+Joomdle is designed to adapt to a wide range of use cases and technical environments:
+
+- **Modular integration** — Use only the features you need; enable course listings, SSO, enrolment, or the Moodle wrapper independently
+- **Extensible** — Developers can build on top of Joomdle's architecture to add custom workflows or connect additional services
+- **Payment options** — Integrate with popular payment gateways to support free, paid, or subscription-based course access
+- **Theme independence** — Works alongside any Joomla template, so your site's design remains fully under your control
+- **Multi-language support** — Suitable for multilingual sites, leveraging Joomla's built-in language management
 
 ## Who Is Joomdle For?
 

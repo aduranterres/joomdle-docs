@@ -1,32 +1,19 @@
-# Eventsbooking
+# Events Booking
 
-## Features
+Joomdle integrates with [Events Booking](https://extensions.joomla.org/extension/event-booking/), automatically enrolling users in Moodle courses when they register for an event.
 
-Allows you to integrate Moodle courses with Events Booking events:
+## Available Plugins
 
-* Automatically enrolls users into selected courses when they register for an event
+* **Events Booking Joomdle** — Enables the integration, automatically enrolling users in the configured Moodle courses when they register for an event.
+* **Events Booking Joomdle Groups** — Allows assigning users to specific Moodle courses or groups when registering for an event. When installed, a new tab appears in the event creation interface. Use this plugin instead of Events Booking Joomdle if you need group assignment.
 
-## Required Plugins
+## How It Works
 
-To use Joomdle-Events Booking integration, you must install and enable this plugin:
-
-* **Events Booking Joomdle**
-
-## Additional Plugins
-
-If you need to add users to specific courses or groups in Moodle, you can use this optional plugin:
-
-* **Events Booking Joomdle Groups**
-
-When this plugin is installed, a new tab will appear in the event creation interface, allowing you to select courses and groups.
+When a user registers for an event, they are automatically enrolled in the Moodle courses associated with that event. If the Groups plugin is active, they can also be assigned to specific course groups.
 
 ## Configuration
 
-When creating a new event, you will find a new tab called **"Joomdle Courses Settings"**.
+When creating or editing an event, a new **Joomdle Courses Settings** tab will appear. From there you can:
 
-In this tab, you can:
-
-* Select which courses users should be enrolled in when they register for the event
-* (If using the Groups plugin) Assign users to specific course groups
-
-This integration streamlines the process of managing course enrollments tied to event registrations, eliminating the need for manual enrollment.
+* Select which courses users should be enrolled in when they register for the event.
+* (If using the Groups plugin) Assign users to specific course groups.

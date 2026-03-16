@@ -1,86 +1,68 @@
-# Hikashop
+# HikaShop
 
-* Enables webmasters to publish Moodle courses within a Hikashop storefront
-* Allows buyers to purchase Moodle courses like any other Hikashop product
-* Automatically enrolls buyers in their selected course(s)
-* Sends customizable confirmation emails to buyers with purchase details and access instructions
+Joomdle integrates with [HikaShop](https://extensions.joomla.org/extension/hikashop/), enabling you to sell Moodle courses through a HikaShop storefront. Courses are published as products, buyers are automatically enrolled upon purchase, and customizable confirmation emails can be sent with access instructions.
 
-## Required Plugins
+## Available Plugins
 
-To use Joomdle-Hikashop integration, you must install and enable these plugins:
+* **Joomdleshop Hikashop** — Publishes Moodle courses as HikaShop products, enabling them to be sold through the storefront.
+* **System Joomdlehikashop** — Processes HikaShop orders and automatically enrols buyers in their purchased Moodle courses.
+* **System Joomdlehikashopgroups** — Assigns users to specific Moodle course groups upon purchase. Use this instead of **System Joomdlehikashop** if you need group assignment.
+* **Hikashop Profile** — Uses Hikashop as an additional data source for profile information synced to Moodle. See [Field Data Mapping](../features/usersync#field-data-mapping) for information on creating field mappings.
+* **Hikashop Joomdle Plugin** — Responds to Hikashop events (such as address updates) by calling Joomdle user sync functions.
 
-* Hikashop Selling Courses
-* Hikashop Orders
+:::note
+Only enable one system plugin at a time: either **System Joomdlehikashop** or **System Joomdlehikashopgroups**.
+:::
 
-## Optional Plugins
+## How It Works
 
-Additional Joomdle-Hikashop plugins are available:
+When a user purchases a Moodle course product in HikaShop, Joomdle automatically enrols them in the corresponding Moodle course. If configured, a confirmation email is sent to the buyer with course details and access instructions.
 
-* **Hikashop Profile**: Uses Hikashop as an additional data source for profile information synced to Moodle
-  * See [Field Data Mapping](#) for information on creating mappings to sync profile fields
-* **Hikashop Joomdle Plugin**: Responds to Hikashop events (such as address updates) by calling Joomdle user sync functions
-* **Hikashop Groups**
-* **Hikashop Start Date**
+For more details on the selling workflow, see [Selling Moodle Courses Through Joomla](../features/sellshop).
 
-**Important**: Only enable one Hikashop system plugin at a time: either Hikashop Orders, Hikashop Groups, or Hikashop Start Date.
+## Configuration
 
-## Hikashop Configuration
+### HikaShop
 
-Ensure Hikashop is installed and functioning properly with standard products before proceeding.
+Ensure HikaShop is installed and functioning properly with standard products before proceeding.
 
-### Create a New Hikashop Product Category
-
-Navigate to the Hikashop Product Menu and create a new Product Category to organize your Moodle courses.
-
-## Joomdle Configuration
+1. Navigate to the HikaShop Product menu and create a new **Product Category** to organize your Moodle courses.
 
 ### Joomla
 
-To activate Joomdle's Hikashop integration, select it in the Joomdle Configuration under the Shop section.
+To activate Joomdle's HikaShop integration, select it in **Joomdle backend → Configuration → Shop**.
 
 #### Mandatory Settings
 
-* **Courses Category**: Select the Hikashop Product Category where you want Moodle courses to appear
+* **Courses Category** — Select the HikaShop Product Category where Moodle courses should appear.
 
 #### Optional Settings
 
-* **Buy Courses for Children**: Enable this feature if needed (see [documentation](#) for details)
-* **Send Enroll Emails**: Enable to have Joomdle send emails upon course purchases
-* **Email Subject and Body**: Customize the email content using placeholders:
-  * `COURSE_NAME` - Automatically populated with the course name from Moodle
-  * `COURSE_URL` - Automatically populated with the course URL from Moodle
-* **Send Bundle Emails**: Enable to send individual emails for each course when a bundle is purchased
+* **Send Enroll Emails** — Enable to send emails upon course purchase.
+* **Email Subject and Body** — Customize email content using placeholders:
+  * `COURSE_NAME` — The course name from Moodle.
+  * `COURSE_URL` — The course URL from Moodle.
+* **Send Bundle Emails** — Send individual emails for each course when a bundle is purchased.
 
-### Moodle
+### Moodle (optional)
 
-The `enrol_joomdle.zip` package includes a new enrollment method for Moodle. While optional, this plugin provides useful features:
+The `enrol_joomdle.zip` package adds a new enrollment method to Moodle that lets you set course costs directly in Moodle and display a link to the shop when users try to access a course without being enrolled.
 
-* Set course costs directly in Moodle
-* Display a link to the shop when users attempt to access courses without enrolling
+**Important:** This enrollment methdod is not really used to enrol the students, so it is not required for selling courses.
 
-#### Installation
+**Installation:**
 
-1. Install via Moodle's plugin installer: **Site Administration → Plugins → Install Plugins**
-2. After installation, navigate to **Site Administration → Plugins → Enrollments → Manage Enroll Plugins**
-3. Enable the new "Joomdle" enrollment method
+1. Install via **Site Administration → Plugins → Install Plugins**.
+2. Go to **Site Administration → Plugins → Enrollments → Manage Enroll Plugins** and enable the **Joomdle** enrollment method.
 
-#### Configuration
+**Settings:**
 
-Click **Edit** to configure the following options:
-
-* **Default Cost**: The default enrollment cost for courses
-* **Currency**: Your preferred currency for course pricing
-* **Enroll Message**: Message displayed when users attempt to access unpaid courses
-  * Use `BUY_COURSE_URL` to insert a link to the product page in your shop
-
-## Selling Courses
-
-For detailed instructions on selling courses with Joomdle, see [Selling Courses with an E-commerce Extension](#).
+* **Default Cost** — The default enrollment cost for courses.
+* **Currency** — Your preferred currency.
+* **Enroll Message** — Message shown when users attempt to access unpaid courses. Use `BUY_COURSE_URL` to insert a link to the product page.
 
 ## Tips & Tricks
 
-If you're exclusively selling courses (not using the "buy for children" feature), you can configure Hikashop to hide the quantity selector, since purchasing multiple instances of a course doesn't make sense.
+If you're exclusively selling courses, you can hide the quantity selector in HikaShop, since purchasing multiple instances of a course doesn't make sense.
 
-**To disable quantity input:**
-
-Navigate to **Hikashop Configuration → Display → Product Options** and set **Quantity Input Method** to **None**.
+Navigate to **HikaShop Configuration → Display → Product Options** and set **Quantity Input Method** to **None**.
