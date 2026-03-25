@@ -11,7 +11,7 @@ You can install the plugin directly through the Moodle interface by going to:
 
 **Site administration → Plugins → Install add-ons**
 
-From there, upload the plugin package and follow the on-screen instructions to complete the installation. You will be redirected to the settings screen, where you will need enter at least:
+From there, upload the plugin package and follow the on-screen instructions to complete the installation. You will be redirected to the settings screen, where you will need to enter at least:
 * Joomla URL
 * Joomla auth token
 

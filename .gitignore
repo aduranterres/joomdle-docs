@@ -20,4 +20,6 @@ yarn-debug.log*
 yarn-error.log*
 
 .claude/
-.docs/claude/
+blog/
+deploy.sh
+docs/.claude/

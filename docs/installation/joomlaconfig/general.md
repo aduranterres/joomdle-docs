@@ -14,6 +14,10 @@ URL of the Moodle server. This is the base URL used by Joomdle to communicate wi
 
 Authentication token used to connect to Moodle web services. This token is generated in Moodle and must match the one configured for the Joomdle web service user.
 
+To get it, after installing Joomdle in Moodle, go to to Moodle → Site administration → Server → Web services → Manage tokens and copy the token for the Joomdle service.
+
+Moodle will only let you see the token once. If you need to, you can just generate a new token for the Joomdle service and the Joomdle user from the same screen.
+
 ## Connection method
 
 Connection method to use for web services. Available options:

@@ -48,7 +48,7 @@ To activate Joomdle's HikaShop integration, select it in **Joomdle backend → C
 
 The `enrol_joomdle.zip` package adds a new enrollment method to Moodle that lets you set course costs directly in Moodle and display a link to the shop when users try to access a course without being enrolled.
 
-**Important:** This enrollment methdod is not really used to enrol the students, so it is not required for selling courses.
+**Important:** This enrollment method is not really used to enrol the students, so it is not required for selling courses.
 
 **Installation:**
 

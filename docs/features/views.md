@@ -3,7 +3,7 @@ sidebar_position: 3
 ---
 # Joomdle Views
 
-With the Joomdle views, you can show information from Moodle in Moodle, such as courses, certificates, etc.
+With the Joomdle views, you can show information from Moodle in Joomla, such as courses, certificates, etc.
 
 
 ## Coursecategories
